@@ -17,7 +17,7 @@ public class ClienteTest {
       
         String result1 = cliente.aprovaCliente(1100, false, false);
         String result2 = cliente.aprovaCliente(900, true, false);
-        String result3 = cliente.aprovaCliente(500, false,false);
+        String result3 = cliente.aprovaCliente(500, true,false);
 
         String result[]= {result1, result2,result3};
         
