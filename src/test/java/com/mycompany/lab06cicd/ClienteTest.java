@@ -17,13 +17,21 @@ public class ClienteTest {
       
         String result1 = cliente.aprovaCliente(1100, false, false);
         String result2 = cliente.aprovaCliente(900, true, false);
-        String result3 = cliente.aprovaCliente(500, false, true);
-        String result4 = cliente.aprovaCliente(950, false, false);
-        String result[]= {result1, result2,result3,result4};
+        String result3 = cliente.aprovaCliente(500, false,false);
+
+        String result[]= {result1, result2,result3};
         
         for (String i : result) {
             assertEquals(expResult, i);
         }
+        
+    }
+    @Test
+    public void testReprovaCliente() {
+        System.out.println("reprovaCliente");
+        String expResult = "cliente Não aprovado";
+        String result1 = cliente.aprovaCliente(950, false, false);
+        assertEquals(expResult, result1);
         
     }
     

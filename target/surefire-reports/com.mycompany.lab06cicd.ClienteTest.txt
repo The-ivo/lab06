@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.mycompany.lab06cicd.ClienteTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in com.mycompany.lab06cicd.ClienteTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.032 s <<< FAILURE! - in com.mycompany.lab06cicd.ClienteTest
+testAprovaCliente  Time elapsed: 0.032 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <cliente aprovado> but was: <cliente Não aprovado>
+	at com.mycompany.lab06cicd.ClienteTest.testAprovaCliente(ClienteTest.java:25)
+
